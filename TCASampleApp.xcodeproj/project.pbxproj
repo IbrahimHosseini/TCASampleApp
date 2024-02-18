@@ -11,6 +11,9 @@
 		0FC4731A2B82473F008FA43A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC473192B82473F008FA43A /* ContentView.swift */; };
 		0FC4731C2B824741008FA43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC4731B2B824741008FA43A /* Assets.xcassets */; };
 		0FC4731F2B824741008FA43A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC4731E2B824741008FA43A /* Preview Assets.xcassets */; };
+		0FC473282B824996008FA43A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0FC473272B824996008FA43A /* ComposableArchitecture */; };
+		0FC4732A2B824C1D008FA43A /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC473292B824C1D008FA43A /* CounterFeature.swift */; };
+		0FC4732C2B824CC3008FA43A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0FC4732B2B824CC3008FA43A /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,7 @@
 		0FC473192B82473F008FA43A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FC4731B2B824741008FA43A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC4731E2B824741008FA43A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FC473292B824C1D008FA43A /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC4732C2B824CC3008FA43A /* ComposableArchitecture in Frameworks */,
+				0FC473282B824996008FA43A /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +57,7 @@
 		0FC473162B82473F008FA43A /* TCASampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0FC473252B824797008FA43A /* Reducer */,
 				0FC473172B82473F008FA43A /* TCASampleAppApp.swift */,
 				0FC473192B82473F008FA43A /* ContentView.swift */,
 				0FC4731B2B824741008FA43A /* Assets.xcassets */,
@@ -65,6 +72,14 @@
 				0FC4731E2B824741008FA43A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FC473252B824797008FA43A /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				0FC473292B824C1D008FA43A /* CounterFeature.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,10 @@
 			dependencies = (
 			);
 			name = TCASampleApp;
+			packageProductDependencies = (
+				0FC473272B824996008FA43A /* ComposableArchitecture */,
+				0FC4732B2B824CC3008FA43A /* ComposableArchitecture */,
+			);
 			productName = TCASampleApp;
 			productReference = 0FC473142B82473F008FA43A /* TCASampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 0FC4730B2B82473F008FA43A;
+			packageReferences = (
+				0FC473262B824996008FA43A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 0FC473152B82473F008FA43A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC4732A2B824C1D008FA43A /* CounterFeature.swift in Sources */,
 				0FC4731A2B82473F008FA43A /* ContentView.swift in Sources */,
 				0FC473182B82473F008FA43A /* TCASampleAppApp.swift in Sources */,
 			);
@@ -279,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +367,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FC473262B824996008FA43A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FC473272B824996008FA43A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC473262B824996008FA43A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		0FC4732B2B824CC3008FA43A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC473262B824996008FA43A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FC4730C2B82473F008FA43A /* Project object */;
 }
