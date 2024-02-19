@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030D095F2B83BB8C0004CBDA /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D095E2B83BB8C0004CBDA /* NumberFactClient.swift */; };
 		0312B1672B8293A40097BC32 /* CounterFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312B1662B8293A40097BC32 /* CounterFeatureTest.swift */; };
 		0FC473182B82473F008FA43A /* TCASampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC473172B82473F008FA43A /* TCASampleAppApp.swift */; };
 		0FC4731A2B82473F008FA43A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC473192B82473F008FA43A /* ContentView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030D095E2B83BB8C0004CBDA /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		0312B1582B828C450097BC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0312B15D2B82937D0097BC32 /* TCASampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCASampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0312B1662B8293A40097BC32 /* CounterFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTest.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				0FC473192B82473F008FA43A /* ContentView.swift */,
 				0FC4731B2B824741008FA43A /* Assets.xcassets */,
 				0FC4731D2B824741008FA43A /* Preview Content */,
+				030D095E2B83BB8C0004CBDA /* NumberFactClient.swift */,
 			);
 			path = TCASampleApp;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				0FC4732A2B824C1D008FA43A /* CounterFeature.swift in Sources */,
 				0FC4731A2B82473F008FA43A /* ContentView.swift in Sources */,
 				0FC473182B82473F008FA43A /* TCASampleAppApp.swift in Sources */,
+				030D095F2B83BB8C0004CBDA /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
