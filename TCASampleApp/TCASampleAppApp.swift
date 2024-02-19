@@ -15,10 +15,15 @@ struct TCASampleAppApp: App {
         CounterFeature()
             ._printChanges()
     }
-    
+
+    static let appStore = Store(initialState: AppFeature.State()) {
+        AppFeature()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView(store: TCASampleAppApp.store)
+//            ContentView(store: TCASampleAppApp.store)
+            AppView(store: TCASampleAppApp.appStore)
         }
     }
 }
